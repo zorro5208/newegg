@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>商品详情页</title>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/detail.css"/>
+		<link rel="stylesheet" type="text/css" href="../lib/layui/css/layui.css"/>
+		<link rel="icon" type="image/x-icon" href="../img/favicon2.ico">
+	</head>
+	<body>
+		<!--头部-->
+		<div id="head"></div>
+		
+		<!--主体内容-->
+		<div id="content">
+			<div class="mianbaoxie">
+				<div class="wraper con">
+					<div class="inner">
+						<a href="index.html">首页</a><span>></span><a href="#">数码产品</a><span>></span><strong>当前</strong>
+					</div>
+				</div>
+			</div>
+			<div class="pro_tabs">
+				<div class="pro_tabs_c clearfix">
+					<ul id="list">
+						<li class="lis cur"><a href="javascript:void(0);" ref="#tab1" main="true" tabname="product" title="商品详情">商品详情</a></li>
+						<li class="lis"><a href="javascript:void(0);" ref="#tab2" tabname="review" title="用户评论">用户评论</a></li>
+						<li class="lis"><a href="javascript:void(0);" ref="#tab3" tabname="performance" title="具体参数">具体参数</a></li>
+						<li class="lis"><a href="javascript:void(0);" ref="#tab4" tabname="wrantly" title="售后服务">售后服务</a></li>	
+					</ul>
+				</div>
+			</div>
+			<div class="main clearfix">
+				<div class="mainer clearfix">
+					<div class="tab1 tabl clearfix" style="display: block;">
+						<div class="goods_all">
+							<div class="goods_tp">
+								<div class="magnifier" id="magnifier1">
+										<div class="magnifier-container">
+											<div class="images-cover">
+<!--											<img src="../img/liebiao_xiaomi6.jpg"/>
+-->											</div>
+											<!--当前图片显示容器-->
+											<div class="move-view"></div>
+											<!--跟随鼠标移动的盒子-->
+										</div>
+										<div class="magnifier-assembly">
+											<div class="magnifier-btn">
+												<span class="magnifier-btn-left">&lt;</span>
+												<span class="magnifier-btn-right">&gt;</span>
+											</div>
+											<!--按钮组-->
+											<div class="magnifier-line">
+												<ul class="clearfix animation03">
+													<!--<li>
+													<div class="small-img">
+														<img src="images/1.png" />
+													</div>
+												</li>-->
+												</ul>
+											</div>
+											<!--缩略图-->
+										</div>
+										<div class="magnifier-view"></div>
+										<!--经过放大的图片显示容器-->
+									</div>
+								<!--产品参数开始-->
+								</div>
+							
+							<div class="goods_xx" id="data">
+								<!--商品详情信息-->
+							</div>
+						</div>
+						<!--//右边评论区-->
+						<div class="right fl">
+							<p>降价通知</p>
+							<p>
+								<span class="sp1">0.0</span>
+								<a href="##" class="totab2"><img src="../img/egg.png"/></a><br />
+								<span class="sp2">点击评论</span>
+							</p>
+							<div class="box">
+								<img src="../img/qrcode_app.png" class="img1"/><br />
+								<span>转到手机看</span>
+							</div>
+							
+						</div>
+						<div class="goods_xq clearfix">
+							<!--<div class="goods_xq_t">
+								<h1 class="title">APPLE 苹果 iPhone7 移动联通电信4G手机</h1>
+								<p><img src="../img/productdis_Newegggg.jpg"/></p>
+								<div id="concent">
+									<img src="../img/detail/p1.jpg" />
+									<img src="../img/detail/p3.jpg"/>
+									<img src="../img/detail/p4.jpg"/>
+								</div>
+							</div>-->
+						</div>
+					</div>
+					<!--//评论区-->
+					<div class="tab2 tabl clearfix" style="display: none;">
+						<div id="con" class="clearfix">
+							<!--留言内容-->
+						</div>
+						<!--表单-->
+						<div id="tab">
+							<div class="comment clearfix">
+								<span class="fl">我来说：总体觉得</span>
+								<div id="test1" class="fl"></div>
+							</div>
+							<form action="#" method="post" id="form">
+								<div class="layui-form-item layui-form-text">
+									<label class="layui-form-label">感受：</label>
+							    <div class="layui-input-block">
+							      <textarea name="desc" placeholder="请输入内容" class="layui-textarea"></textarea>
+							    </div>
+							  </div>
+							  <div class="layui-form-item">
+							    <div class="layui-input-block">
+							      <button type="button" class="layui-btn" lay-submit lay-filter="formDemo">发表评论</button>
+							      <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+							    </div>
+							  </div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="totop"><img src="../img/ToTop_Normal.gif"/></div>
+		</div>
+		<!--尾部-->
+		<div id="foot"></div>
+	</body>
+	<!--<script src="../lib/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../lib/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../lib/layui/layui.all.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../lib/magnifier.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/detail.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/head.js" type="text/javascript" charset="utf-8"></script>-->
+	<script src="../lib/require.js" data-main="../js/detail_main.js" type="text/javascript" charset="utf-8"></script>
+</html>

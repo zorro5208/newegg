@@ -1,0 +1,1 @@
+"use strict";requirejs.config({paths:{jquery:"../lib/jquery-1.10.1.min",cookie:"../lib/jquery.cookie",layui:"../lib/layui/layui",common:"common",list:"list",head:"head"},shim:{cookie:{deps:["jquery"]},list:{deps:["jquery","cookie","common","layui"]},head:{deps:["jquery"]}}}),requirejs(["jquery","cookie","common","layui","list","head"],function(){});

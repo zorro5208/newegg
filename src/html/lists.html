@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>商品列表页</title>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="../css/public.css" />
+		<link rel="stylesheet" type="text/css" href="../css/lists.css" />
+		<link rel="stylesheet" type="text/css" href="../lib/layui/css/layui.css" />
+		<link rel="icon" type="image/x-icon" href="../img/favicon2.ico">
+	</head>
+
+	<body>
+		<!--头部-->
+		<div id="head"></div>
+
+		<!--内容-->
+		<div id="content" class="clearfix">
+			<div class="left">
+				<div class="b1">
+					<h1>手机</h1>
+					<ul class="list">
+						<li id="hw">华为</li>
+						<li id="xm">小米</li>
+						<li id="ry">荣耀</li>
+						<li id="vv">vivo</li>
+					</ul>
+					<h1>手机配件</h1>
+					<ul>
+						<li>手机充电线</li>
+						<li>手机数据线</li>
+						<li>手机通用配件</li>
+						<li>移动电源</li>
+						<li>无线充电</li>
+					</ul>
+					<h1>智能硬件</h1>
+					<ul>
+						<li>智能设备</li>
+						<li>无人机</li>
+						<li>平衡车</li>
+						<li>游戏机</li>
+					</ul>
+				</div>
+				<div class="layui-tab">
+					<ul class="layui-tab-title">
+						<li class="layui-this d2">智能手机</li>
+						<li class="d2">热销榜</li>
+					</ul>
+					<div class="layui-tab-content">
+						<ul class="layui-tab-item layui-show">
+							<li>
+								<img src="../img/A28-800-8AE.jpg" />
+								<a>丹尼尔·惠灵顿  0901DW 女款石英腕表</a>
+								<span>￥489.00</span>
+							</li>
+							<li>
+								<img src="../img/A28-800-8AF (1).jpg" />
+								<a>Daniel Wellington 丹尼尔惠灵顿 </a>
+								<span>￥649.00</span>
+							</li>
+							<li>
+								<img src="../img/A28-800-8AM.jpg" />
+								<a>Daniel Wellington丹尼尔惠灵顿</a>
+								<span>￥499.00</span>
+							</li>
+							<li>
+								<img src="../img/A28-800-8AP.jpg" />
+								<a>Citizen 西铁城 BJ6475-18E Drive CTO</a>
+								<span>￥789.00</span>
+							</li>
+						</ul>
+						<ul class="layui-tab-item">
+							<li>
+								<img src="../img/huawei1.jpg" />
+								<a>Lenovo ThinkPad T420 i5-2520M</a>
+								<span>￥1519.00</span>
+							</li>
+							<li>
+								<img src="../img/huawei71.jpg" />
+								<a>ThinkPad X220 i5 (2nd Gen) 2.5 GH</a>
+								<span>￥1559.00</span>
+							</li>
+							<li>
+								<img src="../img/xiaomi5 (1).jpg" />
+								<a>HP 惠普 Laptop EliteBook 8470P 3rd</a>
+								<span>￥2899.00</span>
+							</li>
+							<li>
+								<img src="../img/xiaomi6 (3).jpg" />
+								<a>HP 惠普 Laptop 250 G5</a>
+								<span>￥3619.00</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="main">
+				<div class="filter_box">
+					<div class="filter_tit">
+						<span>共 <strong id="count">0</strong> 个产品</span>
+					</div>
+					<div class="inner">
+						<div class="inner_j">
+							<span class="jiage">
+								价格:
+							</span>
+							<div class="inner_b" id="price_btn">
+								<div>
+									<a href="javascriptt:void(64);" data-index="0">1500元以下</a>
+								</div>
+								<div>
+									<a href="javascript:;" data-index="1">1500元 - 3200元</a>
+								</div>
+								<div>
+									<a href="javascript:;" data-index="2">3200元 - 4200元</a>
+								</div>
+								<div>
+									<a href="javascript:;" data-index="3">4200元以上</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="funcbar">
+					<a class="abg" href="javascript:;" id="btn3">默认排序</a>
+					<a href="javascript:;" id="btn2">库存量 <img src="../css/img/shang.png" class="img1"/></a>
+					<a href="javascript:;" id="btn1">价格<img src="../css/img/shang.png" class="img2"/></a>
+					<div class="pro_search">
+						<input type="text" id="txt" value="" placeholder="请输入要搜索的关键字" />
+						<a href="javascript:;" class="pro_search_btn" id="btn4">搜索</a>
+					</div>
+				</div>
+				<div class="goodslist clearfix">
+					<ul class="clearfix" id="glist">
+						<!--<li class='prolist'>
+							<a href='javascript:;' class='a_img'><img src="../img/A09-6MX-5RK(1).jpg"/></a>
+							<a href='javascript:;' class='a_title'>123</a>
+							<p class="p1">蛋券SJ05,满1000-30元,满3000-100</p>
+							<p class='price'>￥1999</p>
+							<p><button class="layui-btn btn1">购买</button><button class="layui-btn btn2">加入</button></p>
+						</li>-->
+					</ul>
+					<!--分页-->
+					<div id="btn"></div>
+				</div>
+			</div>
+		</div>
+		<!--尾部-->
+		<div id="foot"></div>
+	</body>
+	<!--<script src="../lib/jquery-1.10.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../lib/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/common.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../lib/layui/layui.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/list.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/head.js" type="text/javascript" charset="utf-8"></script>-->
+<script src="../lib/require.js" data-main="../js/list_main.js" type="text/javascript" charset="utf-8"></script>
+</html>

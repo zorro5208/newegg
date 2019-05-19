@@ -1,0 +1,1 @@
+"use strict";requirejs.config({paths:{jquery:"../lib/jquery-1.10.1.min",cookie:"../lib/jquery.cookie",login:"login"},shim:{cookie:{deps:["jquery"]},login:{deps:["jquery","cookie"]}}}),requirejs(["jquery","cookie","login"],function(){});

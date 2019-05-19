@@ -1,0 +1,361 @@
+@charset "UTF-8";
+#content {
+  width: 1200px;
+  clear: both;
+  margin: 0 auto; }
+  #content .left {
+    width: 180px;
+    float: left; }
+    #content .left h1 {
+      width: 180px;
+      height: 30px;
+      line-height: 30px;
+      text-align: left;
+      background: #FFDC93;
+      cursor: pointer;
+      font-size: 14px;
+      color: #845400;
+      box-sizing: border-box;
+      padding-left: 20px;
+      font-weight: lighter;
+      border: 1px #F3CE76 solid; }
+    #content .left ul {
+      height: 0;
+      overflow: hidden;
+      transition: all .5s;
+      border-left: 1px #F3CE76 solid;
+      border-right: 1px #F3CE76 solid; }
+      #content .left ul li {
+        width: 180px;
+        height: 30px;
+        line-height: 30px;
+        text-align: left;
+        box-sizing: border-box;
+        padding-left: 20px;
+        background: #F5F5F5;
+        list-style: none;
+        font-size: 14px;
+        cursor: pointer;
+        color: #333333; }
+    #content .left .layui-tab {
+      width: 180px;
+      height: 120px; }
+      #content .left .layui-tab .layui-tab-title {
+        height: 27px;
+        width: 180px;
+        border: none; }
+        #content .left .layui-tab .layui-tab-title li {
+          display: inline-block;
+          width: 50%;
+          height: 27px;
+          line-height: 27px;
+          float: left;
+          color: #666;
+          background: #EEEEEE;
+          border-left: 1px solid #ccc;
+          font-size: 12px;
+          cursor: pointer; }
+        #content .left .layui-tab .layui-tab-title .layui-this {
+          background: #fff;
+          border-bottom: none;
+          border-left: 1px solid #ccc;
+          color: #FF6600; }
+      #content .left .layui-tab .layui-tab-content {
+        padding: 0; }
+        #content .left .layui-tab .layui-tab-content .layui-tab-item {
+          padding-bottom: 20px;
+          display: none;
+          height: 355px;
+          border: 1px #E0E0E0 solid; }
+          #content .left .layui-tab .layui-tab-content .layui-tab-item li {
+            width: 178px;
+            overflow: hidden;
+            margin-top: 10px;
+            height: 80px;
+            background: white; }
+            #content .left .layui-tab .layui-tab-content .layui-tab-item li img {
+              display: block;
+              width: 50px;
+              height: 50px;
+              float: left;
+              padding-top: 5px; }
+            #content .left .layui-tab .layui-tab-content .layui-tab-item li a {
+              display: block;
+              float: left;
+              width: 97px;
+              color: #666;
+              line-height: 15px;
+              padding-left: 10px;
+              font-size: 10px; }
+            #content .left .layui-tab .layui-tab-content .layui-tab-item li a:hover {
+              text-decoration: underline;
+              cursor: pointer; }
+            #content .left .layui-tab .layui-tab-content .layui-tab-item li span {
+              font-size: 10px;
+              color: orangered;
+              padding-left: 10px; }
+
+#content .main {
+  float: right;
+  width: 1010px;
+  height: 100%;
+  min-height: 500px;
+  background: #fff;
+  margin: 0 auto; }
+
+/*鎺掑簭*/
+.funcbar {
+  height: 40px;
+  clear: both;
+  margin-top: 10px;
+  border: 1px solid #ccc; }
+  .funcbar a {
+    position: relative; }
+  .funcbar .img1 {
+    position: absolute;
+    top: 9px;
+    left: 60px;
+    display: block;
+    width: 15px;
+    height: 18px;
+    display: none; }
+  .funcbar .img2 {
+    position: absolute;
+    top: 9px;
+    left: 48px;
+    display: block;
+    width: 15px;
+    height: 18px;
+    display: none; }
+
+.funcbar > a {
+  display: block;
+  float: left;
+  height: 40px;
+  line-height: 40px;
+  border-right: 1px solid #ccc;
+  padding: 0 24px 0 20px;
+  text-decoration: none;
+  background: #fff;
+  font-size: 13px; }
+
+.funcbar > a:hover {
+  color: #f60; }
+
+.funcbar .pro_search {
+  float: right;
+  height: 40px;
+  width: 300px; }
+
+#txt {
+  border: 1px solid #d8d8d8;
+  padding: 5px 10px;
+  width: 180px;
+  height: 14px;
+  background-color: #f3f3f3;
+  margin: 7px 0px 0;
+  outline: medium;
+  float: left; }
+
+.funcbar .pro_search_btn {
+  margin-top: 7px;
+  background: #f7661f;
+  border: 1px solid #f7661f;
+  color: #fff;
+  padding: 0 10px;
+  height: 23px;
+  line-height: 24px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 2px;
+  float: none; }
+
+.funcbar .pro_search_btn:hover {
+  background: #FFA500;
+  color: #fff; }
+
+.funcbar .abg {
+  background: #fff0d9;
+  color: #f60; }
+
+/*鍒楄〃涓婇潰绛涢€夐」*/
+.filter_tit {
+  height: 18px;
+  padding: 6px 0;
+  line-height: 18px;
+  background-color: #edf3fa;
+  border: 1px solid #ccc;
+  border-bottom: 0 none;
+  overflow: hidden; }
+
+.filter_tit span {
+  float: left;
+  padding-left: 22px;
+  font-size: 14px; }
+
+.filter_tit span strong {
+  font-size: 14px; }
+
+.inner {
+  border: 1px solid #ccc;
+  overflow: hidden; }
+
+.inner .inner_j {
+  margin-top: -1px;
+  padding: 9px 0 6px 90px;
+  line-height: 18px;
+  border-top: 1px solid #e6e6e6;
+  line-height: 26px; }
+
+.inner .inner_j .jiage {
+  float: left;
+  width: 85px;
+  padding: 0 0 0 5px;
+  margin-left: -90px;
+  text-align: right;
+  font-weight: bold;
+  color: #333;
+  display: block; }
+
+.inner_b {
+  width: 780px;
+  float: left; }
+
+.inner_b div {
+  float: left;
+  padding: 0 13px;
+  margin-bottom: 4px; }
+
+.inner_b .xuanzhong {
+  border: 1px solid #f60; }
+
+.inner_b div a {
+  float: left;
+  display: inline-block;
+  white-space: nowrap;
+  text-decoration: none;
+  font: 13px; }
+
+.inner_b div a span {
+  font-weight: bolder; }
+
+.inner_b div a:hover {
+  color: #f60; }
+
+.kong {
+  font-size: 18px; }
+
+/*鍒楄〃*/
+.goodslist {
+  width: 1010px;
+  background: #fff; }
+
+/*鍒楄〃鏍煎紡*/
+.goodslist .prolist {
+  overflow: hidden;
+  width: 196px;
+  text-align: center;
+  float: left;
+  padding: 15px 28px 16px; }
+  .goodslist .prolist .layui-btn {
+    margin-top: 15px;
+    height: 25px;
+    width: 40px;
+    line-height: 25px;
+    text-align: center;
+    padding: 0;
+    color: white;
+    background: #f60;
+    font-size: 14px;
+    border-radius: 3px; }
+  .goodslist .prolist .btn2 {
+    background: white;
+    color: #302728;
+    border: 1px solid #CCCCCC; }
+  .goodslist .prolist .p1 {
+    font-size: 12px;
+    color: #58BC58; }
+  .goodslist .prolist .p2 {
+    padding-bottom: 15px; }
+    .goodslist .prolist .p2 .sp {
+      color: #C9C5C5; }
+
+.goodslist .prolist .a_img img {
+  width: 180px;
+  height: 135px; 
+}
+
+.goodslist .prolist .a_title {
+  height: 40px;
+  margin: 4px 0;
+  word-wrap: break-word;
+  word-break: break-all;
+  overflow: hidden;
+  line-height: 1.5em;
+  display: block;
+  color: #484848; }
+
+.goodslist .prolist .price {
+  color: #f60;
+  font-family: arial;
+  font-weight: bolder;
+  font-size: 16px;
+  text-align: left; }
+
+#btn {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  padding-top: 10px; }
+
+#btn a,
+#btn span {
+  cursor: pointer;
+  -webkit-user-select: none;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  line-height: 25px;
+  border-radius: 5px;
+  background: white;
+  border: #EEEEEE 1px solid;
+  text-decoration: none;
+  color: #000000;
+  margin: 0 5px; }
+
+#btn span:first-child {
+  cursor: pointer;
+  -webkit-user-select: none;
+  display: inline-block;
+  width: 50px;
+  height: 25px;
+  text-align: center;
+  line-height: 25px;
+  border-radius: 5px;
+  background: white;
+  border: #EEEEEE 1px solid;
+  text-decoration: none;
+  color: #000000;
+  margin: 0 5px; }
+
+#btn span:last-child {
+  cursor: pointer;
+  -webkit-user-select: none;
+  display: inline-block;
+  width: 70px;
+  height: 25px;
+  text-align: center;
+  line-height: 25px;
+  border-radius: 5px;
+  background: white;
+  border: #EEEEEE 1px solid;
+  text-decoration: none;
+  color: #000000;
+  margin: 0 5px; }
+
+#btn .active {
+  background: #000000;
+  color: white; }
+
+/*# sourceMappingURL=lists.css.map */
